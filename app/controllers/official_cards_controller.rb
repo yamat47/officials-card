@@ -8,16 +8,12 @@ class OfficialCardsController < ApplicationController
   def create
     @form = OfficialCardForm.new(official_card_params)
 
-    if @form.valid?
-      send_data(
-        @form.generate_pdf,
-        filename: "official_card.pdf",
-        filetype: "application/pdf",
-        disposition: "inline"
-      )
-    else
-      render :new
-    end
+    send_data(
+      @form.generate_pdf,
+      filename: "official_card.pdf",
+      filetype: "application/pdf",
+      disposition: "inline"
+    )
   end
 
   private
