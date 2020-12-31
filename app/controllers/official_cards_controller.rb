@@ -8,8 +8,13 @@ class OfficialCardsController < ApplicationController
   def create
     @form = OfficialCardForm.new(official_card_params)
 
-    if @form.generate_pdf
-      raise
+    if @form.valid?
+      send_data(
+        @form.generate_pdf,
+        filename: "official_card.pdf",
+        filetype: "application/pdf",
+        disposition: "inline"
+      )
     else
       render :new
     end
@@ -19,6 +24,6 @@ class OfficialCardsController < ApplicationController
     def official_card_params
       params
         .require(:official_card_form)
-        .permit(:tournament, :date, :field, :home, :visitor)
+        .permit(:tournament_1, :date_1, :field_1, :home_1, :visitor_1)
     end
 end

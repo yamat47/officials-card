@@ -1,14 +1,14 @@
 = form_with model: @form, url: official_cards_path, method: :post, local: true do |form|
   dl
-    dt= form.label :tournament
-    dd= form.text_field :tournament
-    dt= form.label :date
-    dd= form.date_field :date
-    dt= form.label :field
-    dd= form.text_field :field
-    dt= form.label :home
-    dd= form.text_field :home
-    dt= form.label :visitor
-    dd= form.text_field :visitor
+    dt= form.label :tournament_1
+    dd= form.text_field :tournament_1
+    dt= form.label :date_1
+    dd= form.date_field :date_1
+    dt= form.label :field_1
+    dd= form.text_field :field_1
+    dt= form.label :home_1
+    dd= form.text_field :home_1
+    dt= form.label :visitor_1
+    dd= form.text_field :visitor_1
     dt
     dd= form.submit "Create Official Cards"
