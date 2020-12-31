@@ -238,9 +238,9 @@
       "type": "text-block",
       "display": true,
       "description": "",
-      "x": 102.1,
+      "x": 107.1,
       "y": 40,
-      "width": 101.5,
+      "width": 96.5,
       "height": 11.1,
       "style": {
         "font-family": [
@@ -2525,7 +2525,7 @@
       "display": true,
       "description": "",
       "x": 453.9,
-      "y": 17,
+      "y": 20,
       "width": 167.8,
       "height": 11.1,
       "style": {
@@ -4860,9 +4860,9 @@
       "type": "text-block",
       "display": true,
       "description": "",
-      "x": 517.1,
+      "x": 524.3,
       "y": 40,
-      "width": 101.5,
+      "width": 94.3,
       "height": 11.1,
       "style": {
         "font-family": [

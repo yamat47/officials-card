@@ -1,14 +1,32 @@
+h1 Official Card Generator
+
 = form_with model: @form, url: official_cards_path, method: :post, local: true do |form|
-  dl
-    dt= form.label :tournament_1
-    dd= form.text_field :tournament_1
-    dt= form.label :date_1
-    dd= form.date_field :date_1
-    dt= form.label :field_1
-    dd= form.text_field :field_1
-    dt= form.label :home_1
-    dd= form.text_field :home_1
-    dt= form.label :visitor_1
-    dd= form.text_field :visitor_1
-    dt
-    dd= form.submit "Create Official Cards"
+  fieldset
+    legend First Game
+    dl
+      dt= form.label :tournament_1
+      dd= form.text_field :tournament_1
+      dt= form.label :date_1
+      dd= form.date_field :date_1
+      dt= form.label :field_1
+      dd= form.text_field :field_1
+      dt= form.label :home_1
+      dd= form.text_field :home_1
+      dt= form.label :visitor_1
+      dd= form.text_field :visitor_1
+
+  fieldset
+    legend Second Game
+    dl
+      dt= form.label :tournament_2
+      dd= form.text_field :tournament_2
+      dt= form.label :date_2
+      dd= form.date_field :date_2
+      dt= form.label :field_2
+      dd= form.text_field :field_2
+      dt= form.label :home_2
+      dd= form.text_field :home_2
+      dt= form.label :visitor_2
+      dd= form.text_field :visitor_2
+
+  = form.submit "Show PDF"

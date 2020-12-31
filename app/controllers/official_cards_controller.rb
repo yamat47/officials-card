@@ -20,6 +20,9 @@ class OfficialCardsController < ApplicationController
     def official_card_params
       params
         .require(:official_card_form)
-        .permit(:tournament_1, :date_1, :field_1, :home_1, :visitor_1)
+        .permit(
+          :tournament_1, :date_1, :field_1, :home_1, :visitor_1,
+          :tournament_2, :date_2, :field_2, :home_2, :visitor_2
+        )
     end
 end
