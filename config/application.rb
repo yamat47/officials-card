@@ -34,6 +34,8 @@ module OfficialsCard
 
     config.i18n.default_locale = :ja
 
+    config.action_controller.forgery_protection_origin_check = false
+
     # Don't generate system test files.
     config.generators.system_tests = nil
 
