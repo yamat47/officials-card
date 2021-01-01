@@ -10,3 +10,10 @@ html
 
   body
     = yield
+    footer.bg-gray-100.p-4.flex.justify-center
+      span.mr-4
+        | Author:
+        = link_to "@yamat47", "https://twitter.com/yamat47", class: "ml-2 underline", target: "_blank"
+      span
+        | GitHub:
+        = link_to "yamat47/officials_card", "https://github.com/yamat47/officials-card", class: "ml-2 underline", target: "_blank"
