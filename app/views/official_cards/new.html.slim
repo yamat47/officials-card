@@ -6,7 +6,8 @@
 
     = form_with model: @form, url: official_cards_path, method: :post, local: true, class: "mt-8 p-4 bg-white shadow-md" do |form|
       fieldset
-        p.text-center.text-xl.mb-4.font-bold First Game
+        p.text-center.text-xl.mb-4.font-bold
+          = t 'views.first_game'
         dl.rounded-md.shadow-sm
           div
             = form.label :tournament_1, class: 'block mb-2 text-gray-800'
@@ -25,7 +26,8 @@
             = form.text_field :visitor_1, class: 'appearance-none rounded-none relative block w-full px-3 py-2.5 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm'
 
       fieldset.mt-8
-        p.text-center.text-xl.mb-4.font-bold Second Game
+        p.text-center.text-xl.mb-4.font-bold
+          = t 'views.second_game'
         dl.rounded-md.shadow-sm
           div
             = form.label :tournament_2, class: 'block mb-2 text-gray-800'
@@ -43,4 +45,4 @@
             = form.label :visitor_2, class: 'block mb-2 text-gray-800'
             = form.text_field :visitor_2, class: 'appearance-none rounded-none relative block w-full px-3 py-2.5 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm'
 
-      = form.submit "Show PDF", class: "group relative w-full flex justify-center mt-8 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      = form.submit t("views.show_pdf"), class: "group relative w-full flex justify-center mt-8 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
