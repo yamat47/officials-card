@@ -1,24 +1,35 @@
-# README
+Officials Card Generator
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+これは何？
+----
 
-Things you may want to cover:
+アメフトの審判が試合中に使うメモ用紙を PDF で生成するアプリです。
+一度に二試合分、事前にわかっている以下の情報を含んだメモ用紙を作ることができます。
 
-* Ruby version
+* 大会
+* 会場
+* 日付
+* ホーム・ビジターチーム
 
-* System dependencies
+![sample image](https://storage.googleapis.com/zenn-user-upload/02hndt2ym745st5n8ayl8gywqqij)
 
-* Configuration
+開発者向けの情報
+----
 
-* Database creation
+### 開発環境の構築
 
-* Database initialization
+* Pull this repository and `bundle install`.
+* Install Postgres.
+* `foreman start`.
+* Go `localhost:3000`
 
-* How to run the test suite
+### リリース
 
-* Services (job queues, cache servers, search engines, etc.)
+Info: This repository uses semantic versioning.
 
-* Deployment instructions
-
-* ...
+* Check if CI is passed.
+* Detect next version number.
+* `ghch --format=markdown --next-version={[ NEXT_VERSION }}`
+* Create release at GitHub.
+* Deploy to Heroku: `git push heroku main`.
