@@ -11,10 +11,10 @@ html
 
   body
     = yield
-    footer.bg-gray-100.p-4.flex.justify-center.grid.grid-cols-1.sm:grid-cols-2
-      span.mr-4
+    footer.bg-gray-100.p-4.flex.justify-center.grid.grid-cols-1.sm:grid-cols-4
+      span.sm:col-start-2.sm:place-self-center
         | Author:
         = link_to "@yamat47", "https://twitter.com/yamat47", class: "ml-2 underline", target: "_blank"
-      span
+      span.sm:col-start-3.sm:place-self-center
         | GitHub:
         = link_to "yamat47/officials_card", "https://github.com/yamat47/officials-card", class: "ml-2 underline", target: "_blank"
