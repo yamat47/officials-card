@@ -19,16 +19,16 @@ class OfficialCardForm
     return false unless valid?
 
     ::OfficialCardReport.generate(
-      tournament_1: tournament_1,
+      tournament_1:,
       tournament_2: tournament_1,
       date_1: date_1.present? ? I18n.l(date_1, format: :short) : nil,
       date_2: date_2.present? ? I18n.l(date_2, format: :short) : nil,
-      field_1: field_1,
-      field_2: field_2,
-      home_1: home_1,
-      home_2: home_2,
-      visitor_1: visitor_1,
-      visitor_2: visitor_2
+      field_1:,
+      field_2:,
+      home_1:,
+      home_2:,
+      visitor_1:,
+      visitor_2:
     )
   end
 end
