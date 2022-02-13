@@ -71,6 +71,8 @@ GEM
     byebug (11.1.3)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    cssbundling-rails (1.0.0)
+      railties (>= 6.0.0)
     digest (3.1.0)
     erubi (1.10.0)
     ffi (1.15.5)
@@ -79,6 +81,9 @@ GEM
       activesupport (>= 5.0)
     i18n (1.9.1)
       concurrent-ruby (~> 1.0)
+    importmap-rails (1.0.2)
+      actionpack (>= 6.0.0)
+      railties (>= 6.0.0)
     io-wait (0.2.1)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -243,7 +248,9 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  cssbundling-rails
   foreman
+  importmap-rails
   listen (~> 3.3)
   matrix
   pg

@@ -1,6 +1,7 @@
 module.exports = {
-  purge: {
-    content: ["./app/**/*.html.slim"],
-  },
-  darkMode: false // or 'media' or 'class'
+  content: [
+    './app/views/**/*.html.slim',
+    './app/helpers/**/*.rb',
+    './app/javascript/**/*.js'
+  ]
 }
