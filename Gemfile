@@ -16,7 +16,7 @@ gem "webpacker"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "matrix"
 gem "importmap-rails"
-gem "cssbundling-rails"
+gem "tailwindcss-rails", "~> 2.0"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
@@ -29,4 +29,3 @@ group :development do
   gem "rubocop-rails", require: false
   gem "rubocop-rails_config", require: false
 end
-
