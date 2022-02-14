@@ -12,6 +12,8 @@ gem "puma", "~> 5.0"
 gem "tailwindcss-rails"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "slim"
+gem "thinreports"
+gem "matrix"
 
 group :development do
   gem "rubocop", require: false
