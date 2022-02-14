@@ -1,7 +1,0 @@
----
-ja:
-  support:
-    array:
-      last_word_connector: "、"
-      two_words_connector: "、"
-      words_connector: "、"
