@@ -14,6 +14,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "slim"
 gem "thinreports"
 gem "matrix"
+gem "rack-cors"
 
 group :development do
   gem "rubocop", require: false
